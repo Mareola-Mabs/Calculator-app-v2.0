@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mareola's Advanced Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="ext/scss/main.css">
+        <link rel="stylesheet" href="ext/Font Awesome/css/font-awesome.min.css" type="text/css"/>
+        <script src="https://kit.fontawesome.com/9b613d8fc7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class="calc">
+            <div class="calc__child">
+                <div class="calc__child-panel">
+                    <div class="calc__child-panel-curved"></div>
+                    <div class="calc__child-panel-flat"></div>
+                </div>
+
+
+
+            <div class="calc__screen">
+                <div class="calc__screen-small--container">
+                    <div></div>
+                    <input type="text" name="" class="calc__screen-small" value="" disabled>
+                </div>
+
+                <div class="calc__screen-big--container">
+                    <div class="big__text">888888888888</div>
+                    <input type="text" name="" class="calc__screen-big" value="" disabled>
+                </div>
+                
+
+            </div>
+
+            <div class="calc__controls">
+                <div class="calc__controls-one return"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+                <div class="calc__controls-one"><i class="fa fa-calculator" aria-hidden="true" style="font-size: 0.6rem; font-weight: bold;"></i></div>
+                <div class="calc__controls-one"><i class="fa fa-cog" aria-hidden="true"></i></div>
+                <div class="calc__controls-one"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></div>
+                <div class="calc__controls-one calc__controls-one-on">
+                    <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    <i class="fa fa-check-circle-o" aria-hidden="true" style="display: none;"></i>
+
+                </div>
+            </div>
+
+            <div class="calc__top-fixed">
+                <div class="calc__top-fixed-panel">
+                    <button class="clicks clear">c</button>
+                </div>
+                <div class="calc__top-fixed-panel">
+                    <button class="clicks half">&half;</button>
+                </div>
+                <div class="calc__top-fixed-panel">
+                    <button class="clicks percentage">%</button>
+                </div>
+                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                    <button class="clicks divide">&divide;</button>
+                </div>
+            </div>
+
+            <div class="calc__bottom-fixed">
+                <div class="calc__bottom-fixed-1">
+                    <div class="calc__bottom-fixed-1-inner">
+                        <div class="calc__bottom-fixed-1-inner-panel">
+                            <div class="calc__bottom-fixed-1-inner-panel-1">
+                                <div class="calc__top-fixed-panel">
+                                    <button class="clicks seven">7</button>
+                                </div>
+                                <div class="calc__top-fixed-panel">
+                                    <button class="clicks eight">8</button>
+                                </div>
+                                <div class="calc__top-fixed-panel">
+                                    <button class="clicks nine">9</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks four">4</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks five">5</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks six">6</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks one">1</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks two">2</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks three">3</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks zero">0</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks dot">.</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">&xscr;</button>
+                                </div>
+                            </div>
+                            <div class="calc__bottom-fixed-1-inner-panel-1">
+                                <div class="calc__top-fixed-panel">
+                                    <button class="clicks">sin</button>
+                                </div>
+                                <div class="calc__top-fixed-panel">
+                                    <button class="clicks">cos</button>
+                                </div>
+                                <div class="calc__top-fixed-panel">
+                                    <button class="clicks">tan</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">ln</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">log</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">!</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">&pi;</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">&exponentiale;</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">&wedge;</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">&Sqrt;</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">&Copf;</button>
+                                </div>
+                                <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                                    <button class="clicks">&gopf;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc__bottom-fixed-2">
+                    <div class="calc__top-fixed-panel">
+                        <button class="clicks times">&times;</button>
+                    </div>
+                    <div class="calc__top-fixed-panel">
+                        <button class="clicks minus">-</button>
+                    </div>
+                    <div class="calc__top-fixed-panel">
+                        <button class="clicks plus">+</button>
+                    </div>
+                    <div class="calc__top-fixed-panel calc__top-fixed-panel--round">
+                        <button class="clicks equals">=</button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+
+
+        <script src="ext/query/jquery-3.6.0.slim.js"></script>
+        <script src="ext/js/btn__shadow.js" async defer></script>
+        <script src="ext/js/screen__input.js" async defer></script>
+    </body>
+</html>
