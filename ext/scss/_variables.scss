@@ -1,0 +1,30 @@
+/*Importing Downloaded Fonts*/
+@font-face {
+    font-family: 'Mareola';
+    src: url('../fonts/Technology.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Mareola';
+    src: url('../fonts/Technology-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Mareola1';
+    src: url('../fonts/digital-7.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+$background-color: rgba(232, 230, 231, 1.0);
+$calc-background: rgba(88, 94, 101, 1.0);
+$child-color: rgba(47, 55, 64, 1.0);
+$keys-color: rgba(252, 171, 200, 1.0);
+$useless: rgba(128, 0, 128, 0.15);
+
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,301 @@
+/*Importing Additional CSS*/
+@import 'variables';
+
+body                                        {margin: 0;
+                                            padding: 0;
+                                            background: $background-color;
+                                            height: 100vh;
+                                            width: 100vw;
+                                            @include flex-center;}
+
+.calc                                       {width: 300px;
+                                            height: 515px;
+                                            background: rgba(34, 39, 46, 1.0);
+                                            border-radius: 30px;
+                                            box-shadow: 8px 8px 13px rgba(1, 2, 17, 1.0), 
+                                            -3px -3px 5px rgba(255, 255, 255, 1.0);
+                                            box-sizing: border-box;
+                                            padding: 12px;
+                                            // transition: all 1.5s ease-in-out;
+
+
+    // &:hover                                     {transform: rotateY(900deg);}                                           
+
+    &__child                                    {width: 100%;
+                                                height: 100%;
+                                                background: rgba(47, 55, 64, 0.5);
+                                                border-radius: 25px;
+                                                position: relative;
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                box-shadow: -1.3px -1.3px 2px rgba(143, 147, 152, 1.0), 
+                                                2px 2px 2px rgba(1, 2, 17, 1.0);
+                                                
+                                            
+        &-panel                                     {position: absolute;
+                                                    width: 60%;
+                                                    height: 25px;
+                                                    box-shadow: inset -4px -4px 4px -4px rgba(143, 147, 152, 1.0);
+                                                    top: 0;
+                                                    background: rgba(34, 39, 46, 1.0);
+                                                    border-radius: 0 0 15px 15px;
+                                                    display: flex;
+                                                    justify-content: center;}
+
+        &-panel-curved                              {width: 30%;
+                                                    height: 5px;
+                                                    background: rgba(47, 55, 64, 0.5);
+                                                    border-radius: 5px;
+                                                    position: relative;
+                                                    box-shadow: -1px -1px 2px rgba(143, 147, 152, 1.0), 
+                                                    1.3px 1.3px 2px rgba(1, 2, 17, 1.0);
+                                                    margin-top: 6px;}
+
+        &-panel-flat                                {width: 99.2%;
+                                                    height: 5px;
+                                                    left: 0;
+                                                    background: rgba(34, 39, 46, 1.0);
+                                                    border-radius: 3px;
+                                                    top: -4px;
+                                                    position: absolute;}
+                                            
+                                                }
+
+    &__screen                                   {width: 90%;
+                                                height: 80px;
+                                                background: rgba(47, 55, 64, 0.5);
+                                                margin-top: 50px;
+                                                border-radius: 10px;
+                                                box-shadow: -1.3px -1.3px 2px rgba(143, 147, 152, 0.5), 
+                                                7px 7px 8px rgba(1, 2, 17, 0.5);
+                                                padding: 10px 8px;
+                                                box-sizing: border-box;
+                                            
+        input                                       {background: none;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    position: absolute;}
+
+        &-small--container                          {width: 98%;
+                                                    border: none;
+                                                    outline: none;
+                                                    height: 18px;
+                                                    text-align: right;
+                                                    background: none;
+                                                    box-sizing: border-box;
+                                                    box-shadow:  -1px -1px 1px rgba(143, 147, 152, 0.5), 
+                                                    7px 7px 8px rgba(1, 2, 17, 0.5);
+                                                    margin-bottom: 10px;
+                                                    position: relative;
+                                                    color: rgba(117, 117, 117, 0.15);
+                                                    padding-left: 7px;
+                                                    padding-right: 7px;}
+
+        &-big--container                            {width: 98%;
+                                                    border: none;
+                                                    background: none;
+                                                    box-shadow:  -1px -1px 1px rgba(143, 147, 152, 0.5), 
+                                                    7px 7px 8px rgba(1, 2, 17, 0.5);
+                                                    height: 30px;
+                                                    font-size: 2rem;
+                                                    box-sizing: border-box;
+                                                    letter-spacing: 2px;
+                                                    text-align: left;
+                                                    position: relative;
+                                                    user-select: none;
+                                                    font-family: Mareola1;
+                                                    color: rgba(117, 117, 117, 0.15);
+                                                
+            div                                         {width: 100%;
+                                                        height: 100%;
+                                                        position: absolute;
+                                                        left: 0;
+                                                        user-select: none;
+                                                        padding-left: 12px;
+                                                        padding-right: 5px;}
+                                                
+                                                    }  
+
+        &-small                                     {font-size: 1rem;
+                                                    font-family: Mareola1;
+                                                    top: 0;
+                                                    left: 0;
+                                                    user-select: none;
+                                                    letter-spacing: 5px;
+                                                    box-sizing: border-box;
+                                                    color: rgba(117, 117, 117, 1.0);
+                                                    text-align: right;
+                                                    padding-left: 7px;
+                                                    padding-right: 4px;
+                                                    padding-top: 2px;
+                                                    outline: none;
+                                                    padding-bottom: 3px;
+                                                    border: none;}
+                                                    
+        &-big                                       {font-size: 2rem;
+                                                    font-family: Mareola1;
+                                                    left: 0;
+                                                    top: 0;
+                                                    user-select: none;
+                                                    box-sizing: border-box;
+                                                    padding-top: 3px;
+                                                    text-align: right;
+                                                    padding-left: 7px;
+                                                    padding-right: 10px;
+                                                    text-shadow: 0.1px 0.1px 0.1px rgba(47, 55, 64, 0.5), 
+                                                    0.1px -0.1px 0.1px rgba(1, 2, 17, 0.5), 
+                                                    -0.1px 0.1px 0.1px rgba(1, 2, 17, 0.5), 
+                                                    -0.1px -0.1px 0.1px rgba(1, 2, 17, 0.5);
+                                                    border: none;
+                                                    letter-spacing: 2px;
+                                                    color: rgba(117, 117, 117, 1.0);
+                                                    outline: none;}
+
+                                                }
+
+    &__controls                                 {margin-top: 10px;
+                                                display: flex;
+                                                height: 40px;
+                                                align-items: center;
+                                                width: 90%;
+                                                gap: 15px;
+                                                background: none;
+                                                position: relative;
+                                            
+        &-one                                       {width: 20px;
+                                                    height: 20px;
+                                                    box-shadow: inset -1px -1px 1px rgba(143, 147, 152, 0.5), 
+                                                    inset 6px 6px 7px rgba(1, 2, 17, 0.5);
+                                                    border-radius: 50%;
+                                                    cursor: pointer;
+                                                    color: rgba(1, 2, 17, 0.35);
+                                                    font-size: 0.8rem;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    text-shadow: 0.3px 0.3px 0.3px rgba(47, 55, 64, 0.5), 
+                                                    0.3px -0.3px 0.3px rgba(1, 2, 17, 0.5), 
+                                                    -0.3px 0.3px 0.3px rgba(1, 2, 17, 0.5), 
+                                                    -0.3px -0.3px 0.3px rgba(1, 2, 17, 0.5);
+                                                
+            &:last-child                                {position: absolute;
+                                                        right: 0;}
+                                                
+                                                    }
+                                            
+                                                }
+
+        &__top-fixed                            {height: 45px;
+                                                width: 90%;
+                                                background: rgba(239, 0, 1, 0.25);
+                                                margin-top: 10px;
+                                                display: grid;
+                                                align-items: center;
+                                                display: flex;
+                                                gap: 10px;
+                                                box-shadow: inset -1px -1px 1px rgba(143, 147, 152, 0.5), 
+                                                inset 5px 5px 6px rgba(1, 2, 17, 0.5);
+                                                box-sizing: border-box;
+                                                padding: 5px;
+                                                user-select: none;
+                                            
+            &-panel                                 {height: 100%;
+                                                    width: 100%;
+                                                    background: rgba(47, 55, 64, 0.5);
+                                                    border-radius: 10px;
+                                                    box-sizing: border-box;
+                                                    padding: 5px;
+                                                
+                button                                  {width: 100%;
+                                                        border-radius: 5px;
+                                                        background: none;
+                                                        border: none;
+                                                        height: 100%;
+                                                        font-size: 1.1rem;
+                                                        font-family: sans-serif;
+                                                        font-weight: bold;
+                                                        color: transparent;
+                                                        text-shadow: 0.3px 0.3px 0.3px rgba(47, 55, 64, 0.5), 
+                                                        0.3px -0.3px 0.3px rgba(1, 2, 17, 0.5), 
+                                                        -0.3px 0.3px 0.3px rgba(1, 2, 17, 0.5), 
+                                                        -0.3px -0.3px 0.3px rgba(1, 2, 17, 0.5);
+                                                        box-shadow: -1.3px -1.3px 2px rgba(143, 147, 152, 0.5), 
+                                                        7px 7px 8px rgba(1, 2, 17, 0.5);
+                                                        cursor: pointer;}
+                                                
+                                                    }
+                                            
+                                                }
+
+        &__bottom-fixed                         {width: 90%;
+                                                display: grid;
+                                                grid-template-columns: 76% 20%;
+                                                background: none;
+                                                margin-top: 10px;
+                                                grid-gap: 10px;
+                                                height: 230px;
+                                                box-sizing: border-box;
+                                            
+            &-1                                     {width: 100%;
+                                                    height: 100%;
+                                                    box-shadow: inset -1px -1px 1px rgba(143, 147, 152, 0.5), 
+                                                    inset 4.5px 4.5px 5.5px rgba(4, 0, 4, 0.5);
+                                                    padding: 8px;
+                                                    user-select: none;
+                                                    box-sizing: border-box;}
+
+            &-1-inner                               {height: 100%;
+                                                    width: 100%;
+                                                    overflow-x: scroll;
+                                                
+                &::-webkit-scrollbar                    {height: 0px;}
+                                                
+                                                    }
+
+            &-1-inner-panel                         {width: 200%;
+                                                    box-sizing: border-box;
+                                                    height: 100%;
+                                                    display: flex;}
+
+            &-1-inner-panel-1                       {width: 100%;
+                                                    height: 100%;
+                                                    box-sizing: border-box;
+                                                    display: grid;
+                                                    grid-template-columns: 1fr 1fr 1fr;
+                                                
+                button                                  {width: 100%;
+                                                        border-radius: 5px;
+                                                        background: none;
+                                                        border: none;
+                                                        height: 100%;
+                                                        font-size: 1.1rem;
+                                                        font-family: sans-serif;
+                                                        font-weight: bold;
+                                                        user-select: none;
+                                                        color: transparent;
+                                                        text-shadow: 0.3px 0.3px 0.3px rgba(47, 55, 64, 0.5), 
+                                                        0.3px -0.3px 0.3px rgba(1, 2, 17, 0.5), 
+                                                        -0.3px 0.3px 0.3px rgba(1, 2, 17, 0.5), 
+                                                        -0.3px -0.3px 0.3px rgba(1, 2, 17, 0.5);
+                                                        
+                                                        cursor: pointer;}
+                                                
+                                                    }
+
+            &-2                                     {width: 100%;
+                                                    height: 100%;
+                                                    background: rgba(239, 0, 1, 0.25);
+                                                    box-shadow: inset -1px -1px 1px rgba(143, 147, 152, 0.5), 
+                                                    inset 5px 5px 6px rgba(1, 2, 17, 0.5);
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    user-select: none;
+                                                    box-sizing: border-box;
+                                                    gap: 5px;
+                                                    padding: 5px;}
+                                            
+                                                }
+
+
+                                            }
